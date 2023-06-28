@@ -11,6 +11,7 @@ jobs:
       VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
     runs-on: ubuntu-latest
     permissions:
+      packages: write
       contents: write
     steps:
       - uses: actions/checkout@v3
